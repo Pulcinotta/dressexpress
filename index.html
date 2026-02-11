@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dress Express — Pigiama Party (14 marzo 2026)</title>
+  <meta name="description" content="Dress Express Pigiama Party: 1 outfit addosso + 1 outfit extra, foto e scheda guidata, vibe cozy e rinfresco. Bologna, Via San Donato 18 — 14 marzo 2026, 19:00–21:00." />
+  <meta name="theme-color" content="#fbf7fb" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dress Express — Pigiama Party" />
+  <meta property="og:description" content="1 outfit addosso + 1 outfit extra • Foto & scheda guidata • Vibe cozy + rinfresco • Bologna, Via San Donato 18 • 14 marzo 2026, 19–21" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#fbf7fb;
+      --card:#ffffff;
+      --ink:#1f1a22;
+      --muted:#6b6370;
+      --line:#ece3ef;
+      --accent:#c25db8;       /* fucsia soft */
+      --accent2:#6c5ce7;      /* lilla */
+      --shadow: 0 10px 30px rgba(31,26,34,.08);
+      --radius: 22px;
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(194,93,184,.16), transparent 60%),
+        radial-gradient(1000px 500px at 90% 0%, rgba(108,92,231,.14), transparent 55%),
+        radial-gradient(900px 500px at 50% 110%, rgba(194,93,184,.10), transparent 55%),
+        var(--bg);
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center;
+      gap:16px; padding:10px 0 18px;
+    }
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none}
+    .logo{
+      width:44px; height:44px; border-radius:14px;
+      background: linear-gradient(135deg, rgba(194,93,184,.95), rgba(108,92,231,.9));
+      box-shadow: var(--shadow);
+      position:relative;
+    }
+    .logo:after{
+      content:"✦"; position:absolute; inset:0;
+      display:grid; place-items:center; color:white; font-size:18px;
+      opacity:.95;
+    }
+    .brand strong{display:block; letter-spacing:.2px}
+    .brand span{display:block; font-size:12.5px; color:var(--muted)}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      border:1px solid var(--line); background:rgba(255,255,255,.65);
+      backdrop-filter: blur(6px);
+      padding:10px 14px; border-radius:999px;
+      color:var(--muted); font-size:13.5px;
+    }
+    .hero{
+      display:grid; grid-template-columns: 1.15fr .85fr;
+      gap:18px; align-items:stretch;
+    }
+    @media (max-width: 860px){ .hero{grid-template-columns:1fr} }
+
+    .card{
+      background:rgba(255,255,255,.86);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .hero .left{padding:26px 26px 22px}
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height:1.06;
+      letter-spacing:-.6px;
+    }
+    .subtitle{
+      margin:0 0 18px;
+      color:var(--muted);
+      font-size: 16.5px;
+      line-height:1.45;
+    }
+    .badges{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 18px}
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.7);
+      font-size:13.5px;
+    }
+    .badge b{font-weight:650}
+    .ctaRow{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .btn{
+      appearance:none; border:0; cursor:pointer;
+      border-radius: 16px;
+      padding: 12px 14px;
+      font-weight:650; font-size:14.5px;
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      text-decoration:none;
+      transition: transform .08s ease, filter .15s ease;
+      will-change: transform;
+    }
+    .btn:active{transform: translateY(1px)}
+    .btnPrimary{
+      color:white;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 10px 26px rgba(194,93,184,.22);
+    }
+    .btnGhost{
+      background: rgba(255,255,255,.75);
+      border:1px solid var(--line);
+      color:var(--ink);
+    }
+    .right{
+      padding:18px;
+      display:flex; flex-direction:column; gap:12px;
+    }
+    .mini{padding:18px}
+    .mini h3{margin:0 0 10px; font-size:16px}
+    .kv{display:grid; grid-template-columns: 1fr; gap:10px}
+    .kv .row{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      padding:12px 12px; border-radius:16px;
+      background: rgba(251,247,251,.7);
+      border:1px solid var(--line);
+      font-size:14px;
+    }
+    .kv .row span{color:var(--muted)}
+    .section{margin-top:18px}
+    .sectionHeader{padding:18px 22px; border-bottom:1px solid var(--line)}
+    .sectionHeader h2{margin:0; font-size:18px}
+    .sectionBody{padding:18px 22px}
+    .grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px}
+    @media (max-width: 860px){ .grid3{grid-template-columns:1fr} }
+    .step{
+      padding:16px; border-radius:18px; border:1px solid var(--line);
+      background: rgba(255,255,255,.75);
+    }
+    .step .num{
+      width:34px; height:34px; border-radius:12px;
+      display:grid; place-items:center; font-weight:800;
+      background: rgba(194,93,184,.10);
+      border:1px solid rgba(194,93,184,.18);
+      margin-bottom:10px;
+    }
+    .step h3{margin:0 0 6px; font-size:15px}
+    .step p{margin:0; color:var(--muted); font-size:14px; line-height:1.45}
+    .checklist{
+      display:grid; grid-template-columns: 1.2fr .8fr; gap:12px;
+    }
+    @media (max-width: 860px){ .checklist{grid-template-columns:1fr} }
+    ul{margin:10px 0 0 18px; color:var(--muted); line-height:1.55}
+    .callout{
+      padding:14px 14px;
+      border-radius: 18px;
+      border: 1px dashed rgba(108,92,231,.35);
+      background: rgba(108,92,231,.06);
+      color: var(--ink);
+      font-size:14px;
+    }
+    .formBox{
+      padding:16px;
+      border-radius: 18px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.75);
+    }
+    label{display:block; font-size:12.5px; color:var(--muted); margin:10px 0 6px}
+    input, textarea{
+      width:100%;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      padding:12px 12px;
+      font-size:14.5px;
+      background:white;
+      outline:none;
+    }
+    textarea{min-height:88px; resize:vertical}
+    .hint{font-size:12.5px; color:var(--muted); margin-top:8px}
+    .footer{
+      margin:18px 0 10px;
+      color:var(--muted);
+      font-size:12.5px;
+      text-align:center;
+    }
+    .fineprint{
+      font-size:12px;
+      color:var(--muted);
+      line-height:1.5;
+      padding:12px 18px 18px;
+    }
+    .spark{font-size:14px; opacity:.95}
+    .divider{height:1px; background:var(--line); margin:14px 0}
+    .tag{
+      display:inline-flex; align-items:center; gap:8px;
+      border-radius:999px; padding:8px 10px;
+      font-size:12.8px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.7);
+      color:var(--muted);
+    }
+    code{background: rgba(0,0,0,.04); padding:2px 6px; border-radius:10px}
+    .link{
+      display:inline-flex; align-items:center; gap:8px;
+      color:var(--ink);
+      text-decoration:none;
+      border-bottom:1px dashed rgba(31,26,34,.25);
+      padding-bottom:2px;
+    }
+    .link:hover{border-bottom-color: rgba(31,26,34,.55)}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="#top">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <strong>Dress Express</strong>
+          <span>Pigiama Party</span>
+        </div>
+      </a>
+      <div class="pill" title="Evento su invito">
+        <span class="spark">🎀</span>
+        <span>Posti limitati • atmosfera cozy</span>
+      </div>
+    </div>
+
+    <div class="hero" id="top">
+      <div class="card left">
+        <h1>Pigiama Party<br/>con Dress Express ✨</h1>
+        <p class="subtitle">
+          Presentati con <b>1 outfit addosso + 1 outfit extra</b> (a parte).
+          Ti aiutiamo a trasformarli in <b>schede pronte</b> (foto + dettagli).
+          Poi, se ti va, puoi fare anche uno <b>scambio</b> con le altre partecipanti.
+        </p>
+
+        <div class="badges">
+          <div class="badge">👗 <b>1 outfit addosso</b></div>
+          <div class="badge">➕ <b>1 outfit extra</b></div>
+          <div class="badge">📸 Photo corner + specchio</div>
+          <div class="badge">🍓 Rinfresco a tema</div>
+        </div>
+
+        <div class="ctaRow">
+          <a class="btn btnPrimary" href="#prenota">Chiedi info / Prenota →</a>
+          <a class="btn btnGhost" href="#come-funziona">Come funziona</a>
+          <button class="btn btnGhost" id="copyInvite" type="button">Copia invito</button>
+        </div>
+
+        <div class="divider"></div>
+        <div class="tag">Dress code: pigiama chic / comfy glam (anche pigiama normale ok)</div>
+      </div>
+
+      <div class="card right">
+        <div class="mini">
+          <h3>Dettagli evento</h3>
+          <div class="kv">
+            <div class="row">
+              <span>📍 Dove</span>
+              <b id="where"></b>
+            </div>
+            <div class="row">
+              <span>🗺️ Mappa</span>
+              <a class="link" id="mapsLink" href="#" target="_blank" rel="noopener">Apri su Google Maps →</a>
+            </div>
+            <div class="row">
+              <span>📅 Quando</span>
+              <b id="when"></b>
+            </div>
+            <div class="row">
+              <span>👥 Posti</span>
+              <b>Max 18</b>
+            </div>
+            <div class="row">
+              <span>⏳ Durata</span>
+              <b>2 ore</b>
+            </div>
+          </div>
+
+          <div class="ctaRow" style="margin-top:12px">
+            <a class="btn btnPrimary" id="waTop" href="#" rel="noopener">Apri WhatsApp →</a>
+            <button class="btn btnGhost" id="addToCal" type="button">Aggiungi a calendario</button>
+          </div>
+          <p class="hint">Calendario: scarica un file <code>.ics</code> (funziona con iPhone/Android/Google Calendar).</p>
+        </div>
+
+        <div class="card mini" style="box-shadow:none; background:transparent; border:0; padding:0 18px 18px;">
+          <div class="callout">
+            <b>Obiettivo della serata:</b> ogni persona torna a casa con <b>2 outfit</b> (addosso + extra) <b>fotografati e schedati</b> e, se vuole, 1 <b>scambio</b>.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card section" id="come-funziona">
+      <div class="sectionHeader">
+        <h2>Come funziona</h2>
+      </div>
+      <div class="sectionBody">
+        <div class="grid3">
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Arrivi con 2 outfit</h3>
+            <p><b>1 addosso + 1 extra</b> (su gruccia o piegato bene). Puliti, stirati, completi.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>Photo corner + schede</h3>
+            <p>Specchio, luci e grucce glamour. Ti guidiamo su foto e dettagli in modo rapido.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Socialità & scambio</h3>
+            <p>Complimenti, chiacchiere e—se ti va—scambio con un’altra partecipante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card section">
+      <div class="sectionHeader">
+        <h2>Checklist outfit</h2>
+      </div>
+      <div class="sectionBody checklist">
+        <div>
+          <div class="callout">
+            <b>Porta solo capi in ottime condizioni.</b> L’idea è che chi riceve l’outfit dica “wow”.
+          </div>
+          <ul>
+            <li><b>2 outfit totali:</b> 1 addosso + 1 extra</li>
+            <li>puliti, profumati, stirati</li>
+            <li>no macchie, no buchi, no usura evidente</li>
+            <li>taglia e marca (se c’è)</li>
+            <li>accessori solo se in condizioni perfette</li>
+            <li><b>niente intimo usato</b></li>
+          </ul>
+        </div>
+
+        <div class="formBox">
+          <b>Info veloci su WhatsApp</b>
+          <p class="hint" style="margin:8px 0 0">
+            Clicca e ti si apre un messaggio già pronto.
+          </p>
+          <div class="ctaRow" style="margin-top:12px">
+            <a class="btn btnPrimary" id="waLink" href="#" rel="noopener">Apri WhatsApp →</a>
+            <a class="btn btnGhost" href="#prenota">Vai alla richiesta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card section" id="prenota">
+      <div class="sectionHeader">
+        <h2>Richiesta informazioni / prenotazione</h2>
+      </div>
+      <div class="sectionBody">
+        <p class="subtitle" style="margin-top:0">
+          Compila i dati qui sotto: si apre WhatsApp con un messaggio già compilato.
+          (Così non perdiamo nulla anche senza app/back-end.)
+        </p>
+
+        <form class="formBox" id="rsvpForm">
+          <label>Nome e cognome</label>
+          <input name="name" autocomplete="name" placeholder="Es. Elena Ferrari" required />
+
+          <label>Telefono</label>
+          <input name="phone" autocomplete="tel" placeholder="Es. 353..." required />
+
+          <label>Email (facoltativa)</label>
+          <input name="email" autocomplete="email" placeholder="Es. nome@email.it" />
+
+          <label>Outfit che porterai (facoltativo)</label>
+          <input name="outfit" placeholder="Es. '1 addosso: satin nero — 1 extra: tuta comfy'..." />
+
+          <label>Note (facoltative)</label>
+          <textarea name="notes" placeholder="Es. 'preferisco no foto' / 'ho una 42' / ecc."></textarea>
+
+          <div class="ctaRow" style="margin-top:12px">
+            <button class="btn btnPrimary" type="submit">Invia su WhatsApp →</button>
+            <button class="btn btnGhost" type="button" id="copyMsg">Copia messaggio</button>
+          </div>
+
+          <p class="hint">
+            Se WhatsApp non si apre, copia il messaggio e incollalo manualmente.
+          </p>
+        </form>
+
+        <div class="fineprint">
+          <b>Privacy:</b> useremo i dati solo per organizzare l’evento e comunicare informazioni correlate.
+          Foto/video solo con consenso espresso.
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> Dress Express • Bologna
+    </div>
+  </div>
+
+<script>
+  // ====== DATI REALI ======
+  // WhatsApp (Italia +39) — solo cifre:
+  const WA_NUMBER = "393534137465";
+
+  // Evento:
+  const EVENT_TITLE = "Dress Express — Pigiama Party";
+  const EVENT_WHERE_TEXT = "Bologna — Via San Donato, 18";
+  const EVENT_WHEN_TEXT  = "Sabato 14 marzo 2026 — 19:00–21:00";
+
+  // Per calendario ICS: data/ora in Europe/Rome (CET/CEST gestito dal calendario)
+  // Start: 2026-03-14 19:00, End: 2026-03-14 21:00
+  const EVENT_START_LOCAL = "2026-03-14T19:00:00";
+  const EVENT_END_LOCAL   = "2026-03-14T21:00:00";
+
+  // Messaggio base WhatsApp (come richiesto)
+  const BASE_WA_MESSAGE = "Ciao, come va? Mi piacerebbe potere avere maggiori informazioni sul Dress Express - Pijama party del 14 marzo. Grazie";
+  // ========================
+
+  // Render dati
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("where").textContent = EVENT_WHERE_TEXT;
+  document.getElementById("when").textContent  = EVENT_WHEN_TEXT;
+
+  // Google Maps link (leggero)
+  const mapsQuery = encodeURIComponent("Via San Donato 18, Bologna");
+  document.getElementById("mapsLink").href = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+
+  // WhatsApp link
+  const waBase = `https://wa.me/${WA_NUMBER}`;
+  const waUrl = (msg) => waBase + "?text=" + encodeURIComponent(msg);
+
+  document.getElementById("waTop").href  = waUrl(BASE_WA_MESSAGE);
+  document.getElementById("waLink").href = waUrl(BASE_WA_MESSAGE);
+
+  // Invite text
+  const inviteText =
+`Dress Express — Pigiama Party 🎀
+${EVENT_WHEN_TEXT}
+${EVENT_WHERE_TEXT}
+
+Presentati con 1 outfit addosso + 1 outfit extra.
+Photo corner + schede guidate + vibe cozy + rinfresco.
+Posti limitati (max 18).
+
+Info e richiesta: ${location.href}`;
+
+  document.getElementById("copyInvite").addEventListener("click", async () => {
+    try{
+      await navigator.clipboard.writeText(inviteText);
+      alert("Invito copiato! Incollalo su WhatsApp/Instagram.");
+    }catch(e){
+      prompt("Copia questo testo:", inviteText);
+    }
+  });
+
+  // Copy base message
+  document.getElementById("copyMsg").addEventListener("click", async () => {
+    try{
+      await navigator.clipboard.writeText(BASE_WA_MESSAGE);
+      alert("Messaggio copiato!");
+    }catch(e){
+      prompt("Copia questo messaggio:", BASE_WA_MESSAGE);
+    }
+  });
+
+  // RSVP form -> apre WhatsApp con messaggio completo (zero backend)
+  document.getElementById("rsvpForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const fd = new FormData(e.target);
+
+    const msg =
+`${BASE_WA_MESSAGE}
+
+— Dettagli partecipante —
+Nome: ${fd.get("name")}
+Telefono: ${fd.get("phone")}
+Email: ${fd.get("email") || "-"}
+
+Outfit (addosso + extra): ${fd.get("outfit") || "-"}
+Note: ${fd.get("notes") || "-"}
+
+(Evento: ${EVENT_WHEN_TEXT} • ${EVENT_WHERE_TEXT})`;
+
+    window.open(waUrl(msg), "_blank", "noopener");
+  });
+
+  // ====== Add to Calendar (.ics) ======
+  // Converte una data local "YYYY-MM-DDTHH:mm:ss" in "YYYYMMDDTHHMMSS"
+  function toICSLocal(dtLocal){
+    const d = new Date(dtLocal);
+    // Ritorna componenti locali (non UTC) per usare TZID:Europe/Rome
+    const pad = (n) => String(n).padStart(2, "0");
+    const yyyy = d.getFullYear();
+    const mm = pad(d.getMonth()+1);
+    const dd = pad(d.getDate());
+    const hh = pad(d.getHours());
+    const mi = pad(d.getMinutes());
+    const ss = pad(d.getSeconds());
+    return `${yyyy}${mm}${dd}T${hh}${mi}${ss}`;
+  }
+
+  function escICS(s){
+    // Escape base per ICS
+    return String(s)
+      .replace(/\\/g, "\\\\")
+      .replace(/\n/g, "\\n")
+      .replace(/,/g, "\\,")
+      .replace(/;/g, "\\;");
+  }
+
+  document.getElementById("addToCal").addEventListener("click", () => {
+    const dtStart = toICSLocal(EVENT_START_LOCAL);
+    const dtEnd   = toICSLocal(EVENT_END_LOCAL);
+
+    const uid = `${Date.now()}@dressexpress`;
+    const nowUtc = new Date().toISOString().replace(/[-:]/g,"").replace(/\.\d{3}Z$/,"Z");
+
+    const ics =
+`BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Dress Express//Pigiama Party//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:${uid}
+DTSTAMP:${nowUtc}
+SUMMARY:${escICS(EVENT_TITLE)}
+DTSTART;TZID=Europe/Rome:${dtStart}
+DTEND;TZID=Europe/Rome:${dtEnd}
+LOCATION:${escICS(EVENT_WHERE_TEXT)}
+DESCRIPTION:${escICS("Presentati con 1 outfit addosso + 1 outfit extra. Photo corner + schede guidate + vibe cozy + rinfresco. Info: ")}${escICS(location.href)}
+END:VEVENT
+END:VCALENDAR`;
+
+    const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "dress-express-pigiama-party.ics";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+</script>
+</body>
+</html>
